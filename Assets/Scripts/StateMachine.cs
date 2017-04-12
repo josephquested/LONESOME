@@ -16,12 +16,14 @@ public class StateMachine : MonoBehaviour {
 	void Start ()
 	{
 		movement = GetComponent<Movement>();
+		anim = GetComponent<Animator>();
 	}
 
 	void Update ()
 	{
 		UpdateMovement();
 		UpdateDirection();
+		UpdateAnimator();
 	}
 
 	// INPUT //
@@ -63,6 +65,8 @@ public class StateMachine : MonoBehaviour {
 
 	Movement movement;
 
+	bool moving;
+
 	float vertical;
 	float horizontal;
 
@@ -72,8 +76,13 @@ public class StateMachine : MonoBehaviour {
 		{
 			if (CanMove())
 			{
+				moving = true;
 				movement.ReceiveAxisInput(horizontal, vertical);
 			}
+		}
+		else
+		{
+			moving = false;
 		}
 	}
 
@@ -91,7 +100,7 @@ public class StateMachine : MonoBehaviour {
 	{
 		if (!directionLock)
 		{
-			// change direction direction
+			direction = GetFacingDirection();
 		}
 	}
 
@@ -101,5 +110,39 @@ public class StateMachine : MonoBehaviour {
 		{
 			direction = newDirection;
 		}
+	}
+
+	Directions GetFacingDirection ()
+	{
+		if (horizontal == 1)
+		{
+			return Directions.East;
+		}
+		if (horizontal == -1)
+		{
+			return Directions.West;
+		}
+		if (vertical == 1)
+		{
+			return Directions.North;
+		}
+		if (vertical == -1)
+		{
+			return Directions.South;
+		}
+		else
+		{
+			return direction;
+		}
+	}
+
+	// ANIMATOR //\
+
+	Animator anim;
+
+	void UpdateAnimator ()
+	{
+		anim.SetBool("Moving", moving);
+		anim.SetInteger("Direction", (int)direction);
 	}
 }

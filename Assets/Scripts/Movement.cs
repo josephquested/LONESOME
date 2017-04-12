@@ -4,19 +4,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour {
 
-	Animator animator;
-
 	public float speed;
-
-	void Start ()
-	{
-		animator = GetComponent<Animator>();
-	}
-
-	void Update ()
-  {
-		UpdateAnimator();
-	}
 
   public void ReceiveAxisInput (float horizontal, float vertical)
   {
@@ -38,10 +26,5 @@ public class Movement : MonoBehaviour {
 		{
 			return new Vector2(0, horizontal);
 		}
-	}
-
-	void UpdateAnimator ()
-	{
-		// animator.SetBool("Moving", sm.state == States.Moving);
 	}
 }
