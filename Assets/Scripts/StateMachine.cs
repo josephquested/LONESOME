@@ -83,7 +83,7 @@ public class StateMachine : MonoBehaviour {
 		return moveableStates.Contains((int)state);
 	}
 
-	// FACING //
+	// DIRECTION //
 
 	public bool directionLock;
 

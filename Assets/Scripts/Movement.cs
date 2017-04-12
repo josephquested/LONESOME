@@ -32,11 +32,11 @@ public class Movement : MonoBehaviour {
 	{
 		if (vertical != 0)
 		{
-			return new Vector2(0, vertical);
+			return new Vector2(vertical, 0);
 		}
 		else
 		{
-			return new Vector2(horizontal, 0);
+			return new Vector2(0, horizontal);
 		}
 	}
 
