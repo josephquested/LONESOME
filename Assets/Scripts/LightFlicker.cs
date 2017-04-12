@@ -4,21 +4,25 @@ using UnityEngine;
 
 public class LightFlicker : MonoBehaviour {
 
-	Light _light;
-
-	public bool flicker;
-
-	public float minFlickerIntensity;
-  public float maxFlickerIntensity;
-  public float flickerSpeed;
-
-  float randomizer = 0;
+	// SYSTEM //
 
 	void Start ()
 	{
 		_light = GetComponent<Light>();
 		StartCoroutine(FlickerRoutine());
 	}
+
+	// FLICKER //
+
+	Light _light;
+
+	public bool flicker;
+
+	public float minFlickerIntensity;
+	public float maxFlickerIntensity;
+	public float flickerSpeed;
+
+	float randomizer = 0;
 
 	IEnumerator FlickerRoutine ()
 	{

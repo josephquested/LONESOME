@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour {
 
-	public float speed;
+  // INPUT //
 
   public void ReceiveAxisInput (float horizontal, float vertical)
   {
     Move(GetMovementVector(horizontal, vertical));
   }
+
+  // MOVEMENT //
+
+  public float speed;
 
 	void Move (Vector2 movement)
 	{

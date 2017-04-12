@@ -136,7 +136,7 @@ public class StateMachine : MonoBehaviour {
 		}
 	}
 
-	// ANIMATOR //\
+	// ANIMATOR //
 
 	Animator anim;
 

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour {
 
+	// SYSTEM //
+
 	StateMachine sm;
 
 	void Start ()
@@ -16,6 +18,8 @@ public class PlayerInput : MonoBehaviour {
 		UpdateAxis();
 		UpdateDirectionLock();
 	}
+
+	// INPUT //
 
 	void UpdateAxis ()
 	{
