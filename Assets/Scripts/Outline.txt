@@ -1,0 +1,13 @@
+Pillars:
+Extremely responsive and fluid character controller.
+Dark aesthetic with a big focus on lighting.
+Deadly combat with very powerful attacks.
+Heavy focus on sneaking and tactical combat.
+
+Sound:
+No music, just really high quality ambient noise that blends into a soundtrack.
+Different objects in the world all make their own noise, which all work in rhythm with each other.
+
+Gameplay:
+When you die, all the creatures around you pause for a moment and start laughing. Quick respawn.
+Short game, highly polished.
