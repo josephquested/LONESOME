@@ -24,7 +24,6 @@ public class LightFlicker : MonoBehaviour {
 	{
 		while (flicker)
 		{
-			print("running");
 			if (randomizer == 0)
 			{
 				_light.intensity = Random.Range(minFlickerIntensity, maxFlickerIntensity);
