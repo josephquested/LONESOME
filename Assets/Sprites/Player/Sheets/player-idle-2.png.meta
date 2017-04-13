@@ -1,45 +1,45 @@
 fileFormatVersion: 2
-guid: 1b7ad4eaa1204e94f9fa02f2efe33601
-timeCreated: 1492045275
+guid: 1a672b61c5f8d9d4cb0758bea30d292f
+timeCreated: 1492052709
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: player-idle-2-MASK_0
-    21300002: player-idle-2-MASK_1
-    21300004: player-idle-2-MASK_2
-    21300006: player-idle-2-MASK_3
-    21300008: player-idle-2-MASK_4
-    21300010: player-idle-2-MASK_5
-    21300012: player-idle-2-MASK_6
-    21300014: player-idle-2-MASK_7
-    21300016: player-idle-2-MASK_8
-    21300018: player-idle-2-MASK_9
-    21300020: player-idle-2-MASK_10
-    21300022: player-idle-2-MASK_11
-    21300024: player-idle-2-MASK_12
-    21300026: player-idle-2-MASK_13
-    21300028: player-idle-2-MASK_14
-    21300030: player-idle-2-MASK_15
-    21300032: player-idle-2-MASK_16
-    21300034: player-idle-2-MASK_17
-    21300036: player-idle-2-MASK_18
-    21300038: player-idle-2-MASK_19
-    21300040: player-idle-2-MASK_20
-    21300042: player-idle-2-MASK_21
-    21300044: player-idle-2-MASK_22
-    21300046: player-idle-2-MASK_23
+    21300000: player-idle-2_0
+    21300002: player-idle-2_1
+    21300004: player-idle-2_2
+    21300006: player-idle-2_3
+    21300008: player-idle-2_4
+    21300010: player-idle-2_5
+    21300012: player-idle-2_6
+    21300014: player-idle-2_7
+    21300016: player-idle-2_8
+    21300018: player-idle-2_9
+    21300020: player-idle-2_10
+    21300022: player-idle-2_11
+    21300024: player-idle-2_12
+    21300026: player-idle-2_13
+    21300028: player-idle-2_14
+    21300030: player-idle-2_15
+    21300032: player-idle-2_16
+    21300034: player-idle-2_17
+    21300036: player-idle-2_18
+    21300038: player-idle-2_19
+    21300040: player-idle-2_20
+    21300042: player-idle-2_21
+    21300044: player-idle-2_22
+    21300046: player-idle-2_23
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
-    sRGBTexture: 0
+    enableMipMap: 1
+    sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
-    convertToNormalMap: 1
+    convertToNormalMap: 0
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
@@ -52,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: 0
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -68,7 +68,7 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 1
+  textureType: 8
   textureShape: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
@@ -94,7 +94,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player-idle-2-MASK_0
+      name: player-idle-2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -107,7 +107,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: player-idle-2-MASK_1
+      name: player-idle-2_1
       rect:
         serializedVersion: 2
         x: 128
@@ -120,7 +120,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: player-idle-2-MASK_2
+      name: player-idle-2_2
       rect:
         serializedVersion: 2
         x: 256
@@ -133,7 +133,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: player-idle-2-MASK_3
+      name: player-idle-2_3
       rect:
         serializedVersion: 2
         x: 384
@@ -146,7 +146,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: player-idle-2-MASK_4
+      name: player-idle-2_4
       rect:
         serializedVersion: 2
         x: 512
@@ -159,7 +159,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: player-idle-2-MASK_5
+      name: player-idle-2_5
       rect:
         serializedVersion: 2
         x: 640
@@ -172,7 +172,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: player-idle-2-MASK_6
+      name: player-idle-2_6
       rect:
         serializedVersion: 2
         x: 768
@@ -185,7 +185,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: player-idle-2-MASK_7
+      name: player-idle-2_7
       rect:
         serializedVersion: 2
         x: 896
@@ -198,7 +198,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: player-idle-2-MASK_8
+      name: player-idle-2_8
       rect:
         serializedVersion: 2
         x: 1024
@@ -211,7 +211,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: player-idle-2-MASK_9
+      name: player-idle-2_9
       rect:
         serializedVersion: 2
         x: 1152
@@ -224,7 +224,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: player-idle-2-MASK_10
+      name: player-idle-2_10
       rect:
         serializedVersion: 2
         x: 1280
@@ -237,7 +237,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: player-idle-2-MASK_11
+      name: player-idle-2_11
       rect:
         serializedVersion: 2
         x: 1408
@@ -250,7 +250,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: player-idle-2-MASK_12
+      name: player-idle-2_12
       rect:
         serializedVersion: 2
         x: 1536
@@ -263,7 +263,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: player-idle-2-MASK_13
+      name: player-idle-2_13
       rect:
         serializedVersion: 2
         x: 1664
@@ -276,7 +276,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: player-idle-2-MASK_14
+      name: player-idle-2_14
       rect:
         serializedVersion: 2
         x: 1792
@@ -289,7 +289,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: player-idle-2-MASK_15
+      name: player-idle-2_15
       rect:
         serializedVersion: 2
         x: 1920
@@ -302,7 +302,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: player-idle-2-MASK_16
+      name: player-idle-2_16
       rect:
         serializedVersion: 2
         x: 2048
@@ -315,88 +315,10 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: player-idle-2-MASK_17
+      name: player-idle-2_17
       rect:
         serializedVersion: 2
         x: 2176
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: player-idle-2-MASK_18
-      rect:
-        serializedVersion: 2
-        x: 2304
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: player-idle-2-MASK_19
-      rect:
-        serializedVersion: 2
-        x: 2432
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: player-idle-2-MASK_20
-      rect:
-        serializedVersion: 2
-        x: 2560
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: player-idle-2-MASK_21
-      rect:
-        serializedVersion: 2
-        x: 2688
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: player-idle-2-MASK_22
-      rect:
-        serializedVersion: 2
-        x: 2816
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: player-idle-2-MASK_23
-      rect:
-        serializedVersion: 2
-        x: 2944
         y: 0
         width: 128
         height: 128
