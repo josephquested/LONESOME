@@ -1,4 +1,4 @@
 14-04-2017
-  
+
   player can lock their direction by holding left shift [X]
   walls exist and receive light [X]
