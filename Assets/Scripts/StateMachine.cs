@@ -19,9 +19,13 @@ public class StateMachine : MonoBehaviour {
 		anim = GetComponent<Animator>();
 	}
 
-	void Update ()
+	void FixedUpdate ()
 	{
 		UpdateMovement();
+	}
+
+	void Update ()
+	{
 		UpdateDirection();
 		UpdateAnimator();
 	}
@@ -65,8 +69,6 @@ public class StateMachine : MonoBehaviour {
 
 	Movement movement;
 
-	bool moving;
-
 	float vertical;
 	float horizontal;
 
@@ -76,13 +78,8 @@ public class StateMachine : MonoBehaviour {
 		{
 			if (CanMove())
 			{
-				moving = true;
 				movement.ReceiveAxisInput(horizontal, vertical);
 			}
-		}
-		else
-		{
-			moving = false;
 		}
 	}
 

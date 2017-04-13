@@ -13,9 +13,13 @@ public class PlayerInput : MonoBehaviour {
 		sm = GetComponent<StateMachine>();
 	}
 
-	void Update ()
+	void FixedUpdate ()
 	{
 		UpdateAxis();
+	}
+
+	void Update ()
+	{
 		UpdateLockDirection();
 	}
 

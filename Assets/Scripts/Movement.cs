@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour {
 
+  // SYSTEM //
+
+  void Start ()
+  {
+    rb = GetComponent<Rigidbody2D>();
+  }
+
   // INPUT //
 
   public void ReceiveAxisInput (float horizontal, float vertical)
@@ -13,11 +20,13 @@ public class Movement : MonoBehaviour {
 
   // MOVEMENT //
 
+  Rigidbody2D rb;
+
   public float speed;
 
 	void Move (Vector2 movement)
 	{
-		transform.Translate(movement * speed);
+		rb.AddForce(movement * speed, ForceMode2D.Impulse);
 	}
 
 	Vector2 GetMovementVector (float vertical, float horizontal)
