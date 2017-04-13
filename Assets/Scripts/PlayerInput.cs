@@ -16,7 +16,7 @@ public class PlayerInput : MonoBehaviour {
 	void Update ()
 	{
 		UpdateAxis();
-		UpdateDirectionLock();
+		UpdateLockDirection();
 	}
 
 	// INPUT //
@@ -26,8 +26,8 @@ public class PlayerInput : MonoBehaviour {
 		sm.ReceiveAxisInput(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 	}
 
-	void UpdateDirectionLock ()
+	void UpdateLockDirection ()
 	{
-		sm.ReceiveDirectionLockInput(Input.GetButton("DirectionLock"));
+		sm.ReceiveLockDirectionInput(Input.GetButton("LockDirection"));
 	}
 }

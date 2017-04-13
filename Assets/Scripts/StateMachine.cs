@@ -34,9 +34,9 @@ public class StateMachine : MonoBehaviour {
     vertical = _vertical;
   }
 
-  public void ReceiveDirectionLockInput (bool _directionLock)
+  public void ReceiveLockDirectionInput (bool _lockDirection)
   {
-    directionLock = _directionLock;
+    lockDirection = _lockDirection;
   }
 
 	// STATE //
@@ -94,11 +94,11 @@ public class StateMachine : MonoBehaviour {
 
 	// DIRECTION //
 
-	public bool directionLock;
+	public bool lockDirection;
 
 	void UpdateDirection ()
 	{
-		if (!directionLock)
+		if (!lockDirection)
 		{
 			direction = GetFacingDirection();
 		}
@@ -106,7 +106,7 @@ public class StateMachine : MonoBehaviour {
 
 	public void AttemptTurn (Directions newDirection)
 	{
-		if (!directionLock)
+		if (!lockDirection)
 		{
 			direction = newDirection;
 		}
@@ -142,7 +142,6 @@ public class StateMachine : MonoBehaviour {
 
 	void UpdateAnimator ()
 	{
-		anim.SetBool("Moving", moving);
 		anim.SetInteger("Direction", (int)direction);
 	}
 }
