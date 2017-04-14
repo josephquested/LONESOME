@@ -16,6 +16,7 @@ public class StateMachine : MonoBehaviour {
 	void Start ()
 	{
 		movement = GetComponent<Movement>();
+		interact = GetComponentInChildren<Interact>();
 		anim = GetComponent<Animator>();
 	}
 
@@ -87,6 +88,15 @@ public class StateMachine : MonoBehaviour {
 	{
 		int[] moveableStates = new int[] { 1 };
 		return moveableStates.Contains((int)state);
+	}
+
+	// INTERACT //
+
+	Interact interact;
+
+	void UpdateInteract ()
+	{
+		interact.ReceiveDirectionInput(direction);
 	}
 
 	// DIRECTION //
