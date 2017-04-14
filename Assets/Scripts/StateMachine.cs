@@ -29,6 +29,7 @@ public class StateMachine : MonoBehaviour {
 	{
 		UpdateDirection();
 		UpdateAnimator();
+		UpdateInteract();
 	}
 
 	// INPUT //
@@ -43,6 +44,13 @@ public class StateMachine : MonoBehaviour {
   {
     lockDirection = _lockDirection;
   }
+
+	public void ReceiveInteractInput (bool _interactButton, bool _interactDown, bool _interactUp)
+	{
+		interactButton = _interactButton;
+		interactDown = _interactDown;
+		interactUp = _interactUp;
+	}
 
 	// STATE //
 
@@ -94,9 +102,17 @@ public class StateMachine : MonoBehaviour {
 
 	Interact interact;
 
+	public bool interactButton;
+	bool interactDown;
+	bool interactUp;
+
 	void UpdateInteract ()
 	{
 		interact.ReceiveDirectionInput(direction);
+		if (interactDown && state == States.Idle)
+		{
+			interact.Fire();
+		}
 	}
 
 	// DIRECTION //

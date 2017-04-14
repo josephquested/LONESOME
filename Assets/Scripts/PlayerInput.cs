@@ -21,6 +21,7 @@ public class PlayerInput : MonoBehaviour {
 	void Update ()
 	{
 		UpdateLockDirection();
+		UpdateInteract();
 	}
 
 	// INPUT //
@@ -33,5 +34,10 @@ public class PlayerInput : MonoBehaviour {
 	void UpdateLockDirection ()
 	{
 		sm.ReceiveLockDirectionInput(Input.GetButton("LockDirection"));
+	}
+
+	void UpdateInteract ()
+	{
+		sm.ReceiveInteractInput(Input.GetButton("Interact"), Input.GetButtonDown("Interact"), Input.GetButtonUp("Interact"));
 	}
 }
