@@ -1,5 +1,6 @@
 14-04-2017
-  interaction trigger rotates with player direction []
+  interactactable script exists, and can be fired by trigger []
+  interaction trigger rotates with player direction [X]
   little wooden ledges for candles to sit on [X]
   candle sprite [X]
   player can lock their direction by holding left shift [X]
