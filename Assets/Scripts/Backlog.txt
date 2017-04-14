@@ -1,4 +1,5 @@
 14-04-2017
-  candle sprite []
+  little wooden ledges for candles to sit on []
+  candle sprite [X]
   player can lock their direction by holding left shift [X]
   walls exist and receive light [X]
