@@ -1,7 +1,8 @@
 17-04-2017
-  when the game starts, the player transitions from wake to idle []
-  player wake from sleeping animation created []
-  candle snuff sfx needs to be trimmed []
+  player wake cycle correctly sets sprite material []
+  when the game starts, the player transitions from wake to idle [X]
+  player wake from sleeping animation created [X]
+  candle snuff sfx needs to be trimmed [X]
 
 14-04-2017
   interactactable script exists, and can be fired by trigger [X]

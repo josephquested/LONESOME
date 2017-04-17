@@ -11,6 +11,7 @@ public class PlayerWake : MonoBehaviour {
 	void Start ()
 	{
 		anim = GetComponent<Animator>();
+		GetComponent<SpriteRenderer>().material = wakeMaterial;
 		if (startAwake) { Wake(); }
 	}
 
@@ -26,6 +27,9 @@ public class PlayerWake : MonoBehaviour {
 
 	public bool startAwake;
 
+	public Material wakeMaterial;
+	public Material idleMaterial;
+
 	IEnumerator WakeRoutine ()
 	{
 		anim.SetTrigger("Wake");
@@ -37,6 +41,7 @@ public class PlayerWake : MonoBehaviour {
 	void Wake ()
 	{
 		anim.SetBool("Idle", true);
+		GetComponent<SpriteRenderer>().material = idleMaterial;
 		GetComponent<PlayerInput>().enabled = true;
 		this.enabled = false;
 	}

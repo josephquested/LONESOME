@@ -49,7 +49,7 @@ public class StateMachine : MonoBehaviour {
 	{
 		interactButton = _interactButton;
 		interactDown = _interactDown;
-		interactUp = _interactUp;
+		// interactUp = _interactUp;
 	}
 
 	// STATE //
@@ -104,7 +104,7 @@ public class StateMachine : MonoBehaviour {
 
 	public bool interactButton;
 	bool interactDown;
-	bool interactUp;
+	// bool interactUp;
 
 	void UpdateInteract ()
 	{
