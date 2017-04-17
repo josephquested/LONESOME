@@ -11,3 +11,10 @@ Different objects in the world all make their own noise, which all work in rhyth
 Gameplay:
 When you die, all the creatures around you pause for a moment and start laughing. Quick respawn.
 Short game, highly polished.
+Good mix between puzzle and action sections.
+
+Prayers:
+  Praying at alters gives you special prayer powers you can use.
+  When a prayer is active, a glowing symbol appears in the centre of your head and illuminates your local area when it is charged.
+  Using a prayer deactivates almost all of the area light, and you know when it is recharged because the light reactivates.
+  Prayers are used to solve puzzles and fight enemies. You can only have one prayer active at once, and often puzzle involve swapping between them strategically. 

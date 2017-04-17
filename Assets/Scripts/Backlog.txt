@@ -1,6 +1,11 @@
+17-04-2017
+  when the game starts, the player transitions from wake to idle []
+  player wake from sleeping animation created []
+  candle snuff sfx needs to be trimmed []
+
 14-04-2017
-  interactactable script exists, and can be fired by trigger []
-  interact script has on trigger enter/exit events that sets its target to the triggered interactable script, or unsets it on exit []
+  interactactable script exists, and can be fired by trigger [X]
+  interact script has on trigger enter/exit events that sets its target to the triggered interactable script, or unsets it on exit [X]
   interaction trigger rotates with player direction [X]
   little wooden ledges for candles to sit on [X]
   candle sprite [X]
