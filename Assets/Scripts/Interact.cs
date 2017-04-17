@@ -16,7 +16,33 @@ public class Interact : MonoBehaviour {
 
 	public void Fire ()
 	{
-		print("fire!");
+		if (interactable != null)
+		{
+			interactable.Fire();
+		}
+	}
+
+	// TRIGGERS //
+
+	public Interactable interactable;
+
+	void OnTriggerEnter2D (Collider2D collider)
+	{
+		if (collider.GetComponent<Interactable>() != null)
+		{
+			interactable = collider.GetComponent<Interactable>();
+		}
+	}
+
+	void OnTriggerExit2D (Collider2D collider)
+	{
+		if (collider.GetComponent<Interactable>() != null)
+		{
+			if (collider.GetComponent<Interactable>() == interactable)
+			{
+				interactable = null;
+			}
+		}
 	}
 
 	// ROTATION //
