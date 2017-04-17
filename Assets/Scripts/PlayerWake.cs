@@ -17,7 +17,7 @@ public class PlayerWake : MonoBehaviour {
 
 	void Update ()
 	{
-		if (Input.anyKey)
+		if (Input.anyKey && !AnimatorIsPlaying("player-wake"))
 		{
 			StartCoroutine(WakeRoutine());
 		}
@@ -40,9 +40,9 @@ public class PlayerWake : MonoBehaviour {
 
 	void Wake ()
 	{
-		anim.SetBool("Idle", true);
 		GetComponent<SpriteRenderer>().material = idleMaterial;
 		GetComponent<PlayerInput>().enabled = true;
+		anim.SetBool("Idle", true);
 		this.enabled = false;
 	}
 

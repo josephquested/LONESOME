@@ -1,0 +1,11 @@
+// BUSHES //
+Player Light Map:
+  size: 98
+  colour: white
+  opacity: 100%
+  angle: 90 degrees
+  hardness: 0
+  spacing: 1
+  smoothing: yes
+  roundness: 54%
+  flow: 46%
