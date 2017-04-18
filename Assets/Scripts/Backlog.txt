@@ -1,5 +1,9 @@
 17-04-2017
-  fix player texture []
+  player makes sad sound when he is sad, and has a small breathing noise []
+  candle flicks out at exactly the right moment to hide texture pop [X]
+  camera offset upwards slightly [X]
+  cursor should vanish when game is running [X]
+  fix player texture [X]
   fix wake animation [X]
   player wake cycle correctly sets sprite material [X]
   when the game starts, the player transitions from wake to idle [X]

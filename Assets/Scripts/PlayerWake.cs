@@ -11,6 +11,7 @@ public class PlayerWake : MonoBehaviour {
 	void Start ()
 	{
 		anim = GetComponent<Animator>();
+		playerAudio = GetComponent<PlayerAudio>();
 		GetComponent<SpriteRenderer>().material = wakeMaterial;
 		if (startAwake) { Wake(); }
 	}
@@ -33,7 +34,9 @@ public class PlayerWake : MonoBehaviour {
 	IEnumerator WakeRoutine ()
 	{
 		anim.SetTrigger("Wake");
-		yield return new WaitForSeconds(1);
+		StartCoroutine(WhimperRoutine());
+		yield return new WaitForSeconds(7.75f);
+		SnuffLightSource();
 		while (AnimatorIsPlaying("player-wake")) { yield return null; }
 		Wake();
 	}
@@ -45,6 +48,33 @@ public class PlayerWake : MonoBehaviour {
 		anim.SetBool("Idle", true);
 		this.enabled = false;
 	}
+
+	// AUDIO //
+
+	PlayerAudio playerAudio;
+
+	public AudioClip whimperClip;
+
+	IEnumerator WhimperRoutine ()
+	{
+		playerAudio.Breathe();
+		yield return new WaitForSeconds(5.80f);
+		playerAudio.SetAudioClip(whimperClip, 0.075f, 0.85f);
+		playerAudio.Play();
+		yield return new WaitForSeconds(2.5f);
+		playerAudio.Breathe();
+	}
+
+	// SCENE //
+
+	public Interactable lightSource;
+
+	void SnuffLightSource ()
+	{
+		lightSource.GetComponent<Interactable>().Fire();
+	}
+
+	// ANIMATOR //
 
 	bool AnimatorIsPlaying (string stateName)
 	{
