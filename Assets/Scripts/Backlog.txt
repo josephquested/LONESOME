@@ -1,5 +1,6 @@
 17-04-2017
-  player makes sad sound when he is sad, and has a small breathing noise []
+  player makes breathing noise while moving []
+  player makes sad sound when he is sad, and has a small breathing noise [X]
   candle flicks out at exactly the right moment to hide texture pop [X]
   camera offset upwards slightly [X]
   cursor should vanish when game is running [X]

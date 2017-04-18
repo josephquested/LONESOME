@@ -6,39 +6,36 @@ public class PlayerAudio : MonoBehaviour {
 
 	// SYSTEM //
 
-	AudioSource audioSource;
-
-	void Start ()
-	{
-		audioSource = GetComponent<AudioSource>();
-	}
+	public AudioSource breatheAudio;
+	public AudioSource expressionAudio;
 
 	// CONTROLS //
 
-	public void SetAudioClip (AudioClip clip, float volume, float pitch)
+	public void SetExpressionClip (AudioClip clip, float volume, float pitch)
 	{
-		audioSource.clip = clip;
-		audioSource.volume = volume;
-		audioSource.pitch = pitch;
+		expressionAudio.clip = clip;
+		expressionAudio.volume = volume;
+		expressionAudio.pitch = pitch;
 	}
 
-	public void Play ()
+	public void PlayExpression ()
 	{
-		audioSource.Play();
-	}
-
-	public void Stop ()
-	{
-		audioSource.Stop();
+		expressionAudio.Play();
 	}
 
 	// COMMON AUDIO //
 
 	public AudioClip breathingClip;
 
-	public void Breathe ()
+	public void Breathe (bool shouldBreathe)
 	{
-		SetAudioClip(breathingClip, 0.2f, 6f);
-		Play();
+		if (shouldBreathe && !breatheAudio.isPlaying)
+		{
+			breatheAudio.Play();
+		}
+		else
+		{
+			breatheAudio.Stop();
+		}
 	}
 }

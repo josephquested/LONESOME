@@ -57,12 +57,9 @@ public class PlayerWake : MonoBehaviour {
 
 	IEnumerator WhimperRoutine ()
 	{
-		playerAudio.Breathe();
 		yield return new WaitForSeconds(5.80f);
-		playerAudio.SetAudioClip(whimperClip, 0.075f, 0.85f);
-		playerAudio.Play();
-		yield return new WaitForSeconds(2.5f);
-		playerAudio.Breathe();
+		playerAudio.SetExpressionClip(whimperClip, 0.1f, 0.95f);
+		playerAudio.PlayExpression();
 	}
 
 	// SCENE //
