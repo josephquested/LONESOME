@@ -18,7 +18,6 @@ public class StateMachine : MonoBehaviour {
 		movement = GetComponent<Movement>();
 		interact = GetComponentInChildren<Interact>();
 		playerAudio = GetComponent<PlayerAudio>();
-		anim = GetComponent<Animator>();
 	}
 
 	void FixedUpdate ()
@@ -170,11 +169,11 @@ public class StateMachine : MonoBehaviour {
 
 	// ANIMATOR //
 
-	Animator anim;
+	public Animator eyeAnim;
 
 	void UpdateAnimator ()
 	{
-		anim.SetInteger("Direction", (int)direction);
+		eyeAnim.SetInteger("Direction", (int)direction);
 	}
 
 	// AUDIO //

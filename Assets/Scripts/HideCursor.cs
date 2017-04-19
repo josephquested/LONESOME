@@ -3,8 +3,10 @@ using System.Collections;
 
 public class HideCursor : MonoBehaviour {
 
+  public bool cursorVisible;
+
   void Awake ()
   {
-    Cursor.visible = false;
+    Cursor.visible = cursorVisible;
   }
 }

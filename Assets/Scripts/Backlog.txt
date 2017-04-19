@@ -1,4 +1,6 @@
 17-04-2017
+  eyes need to update their facing direction []
+  player eyes should glow regardless of light level [X]
   player makes breathing noise while moving [X]
   player makes sad sound when he is sad, and has a small breathing noise [X]
   candle flicks out at exactly the right moment to hide texture pop [X]
