@@ -1,4 +1,5 @@
 17-04-2017
+  rooms have left and right walls, so they appear less flat []
   new player idle texture is way too flat and lifeless. copy the grayscale from the final wake anim frame [X]
   player eyes object should only activate after wake cycle completed [X]
   eyes need to update their facing direction [X]
