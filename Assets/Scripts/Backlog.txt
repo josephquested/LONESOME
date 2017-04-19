@@ -1,5 +1,7 @@
 17-04-2017
-  eyes need to update their facing direction []
+  new player idle texture is way too flat and lifeless. copy the grayscale from the final wake anim frame [X]
+  player eyes object should only activate after wake cycle completed [X]
+  eyes need to update their facing direction [X]
   player eyes should glow regardless of light level [X]
   player makes breathing noise while moving [X]
   player makes sad sound when he is sad, and has a small breathing noise [X]

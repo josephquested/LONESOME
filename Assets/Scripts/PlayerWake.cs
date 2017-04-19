@@ -28,6 +28,8 @@ public class PlayerWake : MonoBehaviour {
 
 	public bool startAwake;
 
+	public GameObject playerEyes;
+
 	public Material wakeMaterial;
 	public Material idleMaterial;
 
@@ -37,6 +39,7 @@ public class PlayerWake : MonoBehaviour {
 		StartCoroutine(WhimperRoutine());
 		yield return new WaitForSeconds(7.75f);
 		SnuffLightSource();
+		playerEyes.SetActive(true);
 		while (AnimatorIsPlaying("player-wake")) { yield return null; }
 		Wake();
 	}
