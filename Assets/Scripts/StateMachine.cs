@@ -17,6 +17,7 @@ public class StateMachine : MonoBehaviour {
 	{
 		movement = GetComponent<Movement>();
 		interact = GetComponentInChildren<Interact>();
+		playerAudio = GetComponent<PlayerAudio>();
 		anim = GetComponent<Animator>();
 	}
 
@@ -30,6 +31,7 @@ public class StateMachine : MonoBehaviour {
 		UpdateDirection();
 		UpdateAnimator();
 		UpdateInteract();
+		UpdateBreathAudio();
 	}
 
 	// INPUT //
@@ -81,14 +83,21 @@ public class StateMachine : MonoBehaviour {
 	float vertical;
 	float horizontal;
 
+	bool moving;
+
 	void UpdateMovement ()
 	{
 		if (horizontal != 0 || vertical != 0)
 		{
 			if (CanMove())
 			{
+				moving = true;
 				movement.ReceiveAxisInput(horizontal, vertical);
 			}
+		}
+		else
+		{
+			moving = false;
 		}
 	}
 
@@ -166,5 +175,14 @@ public class StateMachine : MonoBehaviour {
 	void UpdateAnimator ()
 	{
 		anim.SetInteger("Direction", (int)direction);
+	}
+
+	// AUDIO //
+
+	PlayerAudio playerAudio;
+
+	void UpdateBreathAudio ()
+	{
+		playerAudio.Breathe(moving);
 	}
 }

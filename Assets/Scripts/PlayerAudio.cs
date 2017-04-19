@@ -27,15 +27,17 @@ public class PlayerAudio : MonoBehaviour {
 
 	public AudioClip breathingClip;
 
+	public float breathVolume;
+
 	public void Breathe (bool shouldBreathe)
 	{
-		if (shouldBreathe && !breatheAudio.isPlaying)
+		if (shouldBreathe && breatheAudio.volume < breathVolume)
 		{
-			breatheAudio.Play();
+			breatheAudio.volume += 0.01f;
 		}
-		else
+		if (!shouldBreathe && breatheAudio.volume > 0)
 		{
-			breatheAudio.Stop();
+			breatheAudio.volume -= 0.01f;
 		}
 	}
 }
