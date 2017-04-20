@@ -173,7 +173,10 @@ public class StateMachine : MonoBehaviour {
 
 	void UpdateAnimator ()
 	{
-		eyeAnim.SetInteger("Direction", (int)direction);
+		if (eyeAnim.gameObject.activeSelf == true)
+		{
+			eyeAnim.SetInteger("Direction", (int)direction);
+		}
 	}
 
 	// AUDIO //

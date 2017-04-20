@@ -3,7 +3,7 @@
   when the timer goes off, one of the candles blows out and the door partially opens []
   when the player enters the first chamber, a timer starts []
   first chamber controller detects when the player enters []
-  white lights should emit the appropriate note sound []
+  white lights should emit the appropriate note sound [X]
   rooms have left and right walls, so they appear less flat [X]
   new player idle texture is way too flat and lifeless. copy the grayscale from the final wake anim frame [X]
   player eyes object should only activate after wake cycle completed [X]

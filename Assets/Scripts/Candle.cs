@@ -7,12 +7,15 @@ public class Candle : Interactable {
 	public Light light1;
 	public Light light2;
 
+	public bool lit = true;
+
 	public AudioSource humAudio;
 
 	public float fadeSpeed;
 
 	public override void Fire ()
 	{
+		lit = false;
 		GetComponent<Animator>().SetTrigger("Snuff");
 		GetComponent<AudioSource>().Play();
 		StartCoroutine(FadeOutLightRoutine(light1));
