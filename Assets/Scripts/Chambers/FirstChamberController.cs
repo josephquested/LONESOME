@@ -15,6 +15,7 @@ public class FirstChamberController : MonoBehaviour {
 		UpdateLight();
 		UpdateOpenness();
 		UpdateAudio();
+		UpdateRenderer();
 	}
 
 	void MoveToTarget (Vector3 target)
@@ -120,6 +121,16 @@ public class FirstChamberController : MonoBehaviour {
 		if (openness == 2 && spotLight.range < 8)
 		{
 			spotLight.range += lightSpeed;
+		}
+	}
+
+	// RENDERER //
+
+	void UpdateRenderer ()
+	{
+		if (openness == 2)
+		{
+			door.GetComponent<SpriteRenderer>().sortingOrder = 6;
 		}
 	}
 

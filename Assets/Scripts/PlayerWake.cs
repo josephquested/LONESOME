@@ -18,13 +18,16 @@ public class PlayerWake : MonoBehaviour {
 
 	void Update ()
 	{
-		if (Input.anyKey && !AnimatorIsPlaying("player-wake"))
+		if (Input.anyKey && !waking)
 		{
+			waking = true;
 			StartCoroutine(WakeRoutine());
 		}
 	}
 
 	// WAKING //
+
+	bool waking = false;
 
 	public bool startAwake;
 
@@ -39,13 +42,13 @@ public class PlayerWake : MonoBehaviour {
 		StartCoroutine(WhimperRoutine());
 		yield return new WaitForSeconds(7.75f);
 		SnuffLightSource();
-		playerEyes.SetActive(true);
 		while (AnimatorIsPlaying("player-wake")) { yield return null; }
 		Wake();
 	}
 
 	void Wake ()
 	{
+		playerEyes.SetActive(true);
 		GetComponent<SpriteRenderer>().material = idleMaterial;
 		GetComponent<PlayerInput>().enabled = true;
 		anim.SetBool("Idle", true);
