@@ -1,5 +1,10 @@
 17-04-2017
-  rooms have left and right walls, so they appear less flat []
+  when the player blows out the second candle, the door opens fully []
+  when the timer goes off, one of the candles blows out and the door partially opens []
+  when the player enters the first chamber, a timer starts []
+  first chamber controller detects when the player enters []
+  white lights should emit the appropriate note sound []
+  rooms have left and right walls, so they appear less flat [X]
   new player idle texture is way too flat and lifeless. copy the grayscale from the final wake anim frame [X]
   player eyes object should only activate after wake cycle completed [X]
   eyes need to update their facing direction [X]

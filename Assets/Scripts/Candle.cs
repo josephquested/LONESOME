@@ -7,6 +7,8 @@ public class Candle : Interactable {
 	public Light light1;
 	public Light light2;
 
+	public AudioSource humAudio;
+
 	public float fadeSpeed;
 
 	public override void Fire ()
@@ -15,6 +17,7 @@ public class Candle : Interactable {
 		GetComponent<AudioSource>().Play();
 		StartCoroutine(FadeOutLightRoutine(light1));
 		StartCoroutine(FadeOutLightRoutine(light2));
+		Destroy(humAudio);
 	}
 
 	IEnumerator FadeOutLightRoutine (Light light)
