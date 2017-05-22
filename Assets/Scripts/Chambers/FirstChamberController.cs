@@ -28,6 +28,8 @@ public class FirstChamberController : MonoBehaviour {
 
 	public Transform door;
 
+	public Collider2D doorCollider;
+
 	public int openness = 0;
 	public float speed;
 
@@ -84,6 +86,7 @@ public class FirstChamberController : MonoBehaviour {
 		{
 			lastStop = true;
 			slamAudio.Play();
+			doorCollider.enabled = false;
 		}
 		if (GetTarget() != door.transform.position)
 		{
